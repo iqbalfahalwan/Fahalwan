@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palet utama -->
+    <color name="ungu">#4B0082</color> <!-- ungu gelap -->
+    <color name="ijo">#00FF00</color> <!-- ijo cerah -->
+    <color name="coklat">#8B4513</color> <!-- coklat -->
+    <color name="langit">#afffff</color>
+
+    <!-- Warna netral -->
+    <color name="hitam">#000000</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="abu">#808080</color> <!-- abu-abu standar -->
+</resources>
