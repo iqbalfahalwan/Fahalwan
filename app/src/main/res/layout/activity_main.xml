@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@drawable/bg_utama">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:background="@drawable/bg_nav"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/ungu">
+
+            <TextView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:gravity="center"
+                 android:background="@drawable/bg_merah"
+                 android:textColor="@color/hitam"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/keluar"
+                 android:text="X" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:background="@drawable/bg_utama"
+                 android:padding="5dp"
+                 android:textColor="@color/ijo"
+                 android:id="@+id/root" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             ads:adUnitId="ca-app-pub-2534537144295464/1737827651"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_nav" />
+
+        <ScrollView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:orientation="vertical">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:background="@drawable/bg_cincin"
+                     android:layout_margin="15dp"
+                     android:padding="5dp"
+                     android:orientation="vertical">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:padding="5dp"
+                         android:layout_margin="5dp"
+                         android:textColor="@color/ijo"
+                         android:layout_gravity="center_horizontal"
+                         android:textStyle="bold"
+                         android:text="INFORMASI PERANGKAT" />
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/m_hp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/t_hp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/v_hp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:background="@drawable/bg_cincin"
+                     android:layout_margin="15dp"
+                     android:padding="5dp"
+                     android:orientation="vertical">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:padding="5dp"
+                         android:layout_margin="5dp"
+                         android:textColor="@color/ijo"
+                         android:layout_gravity="center_horizontal"
+                         android:textStyle="bold"
+                         android:text="INFORMASI CPU" />
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/m_cpu" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/t_cpu" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/k_cpu" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:background="@drawable/bg_cincin"
+                     android:layout_margin="15dp"
+                     android:padding="5dp"
+                     android:orientation="vertical">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:padding="5dp"
+                         android:layout_margin="5dp"
+                         android:textColor="@color/ijo"
+                         android:layout_gravity="center_horizontal"
+                         android:textStyle="bold"
+                         android:text="INFORMASI PENYIMPANAN" />
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/i_in" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/i_sd" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/i_ram" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:background="@drawable/bg_cincin"
+                     android:layout_margin="15dp"
+                     android:padding="5dp"
+                     android:orientation="vertical">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:padding="5dp"
+                         android:layout_margin="5dp"
+                         android:textColor="@color/ijo"
+                         android:layout_gravity="center_horizontal"
+                         android:textStyle="bold"
+                         android:text="INFORMASI BATERAI" />
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/t_bat" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/k_bat" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/d_bat" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:background="@drawable/bg_cincin"
+                     android:layout_margin="15dp"
+                     android:padding="5dp"
+                     android:orientation="vertical">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:padding="5dp"
+                         android:layout_margin="5dp"
+                         android:textColor="@color/ijo"
+                         android:layout_gravity="center_horizontal"
+                         android:textStyle="bold"
+                         android:text="INFORMASI JARINGAN" />
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:orientation="vertical">
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/j_satu" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/j_dua" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/j_s" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="wrap_content"
+                             android:layout_margin="3dp"
+                             android:textColor="@color/langit"
+                             android:textStyle="italic"
+                             android:id="@+id/j_i" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/coklat">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/nav" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:src="@drawable/sd_tolak"
+                 android:id="@+id/status" />
+
+            <LinearLayout
+                 android:layout_height="25dp"
+                 android:layout_width="wrap_content"
+                 android:gravity="center_vertical"
+                 android:background="@drawable/bg_lime"
+                 android:padding="5dp"
+                 android:id="@+id/donasi">
+
+                <ImageView
+                     android:layout_height="20dp"
+                     android:layout_width="20dp"
+                     android:layout_marginEnd="10dp"
+                     android:src="@drawable/duit" />
+
+                <TextView
+                     android:layout_height="20dp"
+                     android:layout_width="wrap_content"
+                     android:background="@color/ijo"
+                     android:gravity="center"
+                     android:textColor="#000000"
+                     android:text="DONASI" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             ads:adUnitId="ca-app-pub-2534537144295464/1737827651"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_utama" />
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:columnCount="3"
+                     android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center"
+                         android:layout_margin="15dp"
+                         android:orientation="vertical"
+                         android:id="@+id/berkas">
+
+                        <ImageView
+                             android:layout_height="30dp"
+                             android:layout_width="30dp"
+                             android:src="@drawable/ic_berkas"
+                             android:layout_margin="5dp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="75dp"
+                             android:gravity="center"
+                             android:background="@drawable/bg_putih"
+                             android:padding="2dp"
+                             android:textColor="#000000"
+                             android:text="Berkas" />
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

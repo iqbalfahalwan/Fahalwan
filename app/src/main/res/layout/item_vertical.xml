@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:background="@drawable/bg_cincin"
+     android:padding="5dp"
+     android:layout_margin="15dp"
+     android:orientation="vertical">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical">
+
+        <ImageView
+             android:layout_height="35dp"
+             android:layout_width="35dp"
+             android:layout_margin="5dp"
+             android:id="@+id/gambar" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="75dp"
+             android:gravity="center"
+             android:background="@drawable/bg_putih"
+             android:padding="3dp"
+             android:layout_margin="2dp"
+             android:textColor="#000000"
+             android:id="@+id/nama" />
+
+    </LinearLayout>
+
+    <TextView
+         android:layout_height="20dp"
+         android:layout_width="20dp"
+         android:visibility="gone"
+         android:gravity="center"
+         android:background="@drawable/bg_lime"
+         android:textColor="@color/hitam"
+         android:text="✓"
+         android:id="@+id/centang" />
+
+</FrameLayout>

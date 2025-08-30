@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@drawable/bg_utama">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:background="@drawable/bg_nav"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/ungu">
+
+            <TextView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:gravity="center"
+                 android:background="@drawable/bg_merah"
+                 android:textColor="@color/hitam"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/keluar"
+                 android:text="X" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/apk_folder"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/apk" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/sd_folder"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/sd" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:visibility="gone"
+                 android:src="@drawable/x"
+                 android:id="@+id/bersih" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             ads:adUnitId="ca-app-pub-2534537144295464/1737827651"
+             android:id="@+id/iklan_nav" />
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_gravity="center_horizontal"
+                     android:id="@+id/grid_papan">
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/coklat">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginEnd="50dp"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/nav" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/ikon"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/baru" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/ikon"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/urut" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/ikon"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/cari" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             ads:adUnitId="ca-app-pub-2534537144295464/1737827651"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_utama" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:background="@drawable/bg_putih"
+             android:padding="2dp"
+             android:layout_margin="3dp"
+             android:textColor="@color/hitam"
+             android:textIsSelectable="true"
+             android:id="@+id/jalur"
+             android:text="/" />
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:visibility="gone"
+             android:background="@color/abu"
+             android:gravity="center"
+             android:layout_margin="5dp"
+             android:id="@+id/lama">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/salin"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/salin" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/potong"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/potong" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:visibility="gone"
+                 android:src="@drawable/tempel"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/tempel" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/rename"
+                 android:layout_marginEnd="25dp"
+                 android:id="@+id/rename" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/hapus"
+                 android:id="@+id/hapus" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/ikon"
+                 android:id="@+id/zip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="5dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:columnCount="3"
+                     android:layout_gravity="center_horizontal"
+                     android:id="@+id/grid_utama">
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
