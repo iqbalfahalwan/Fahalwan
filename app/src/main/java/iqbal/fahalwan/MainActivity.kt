@@ -57,7 +57,7 @@ public class MainActivity : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         RewardedAd.load(
             this,
-            "ca-app-pub-2534537144295464/6694371366",
+            "ca-aplikasi-pub-2534537144295464/7079484365",
             adRequest,
             object : RewardedAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {
@@ -446,6 +446,18 @@ public class MainActivity : AppCompatActivity() {
       
       findViewById<LinearLayout>(R.id.berkas).setOnClickListener{
         startActivity(Intent(this, Berkas::class.java))
+      }
+      
+      findViewById<LinearLayout>(R.id.terminal).setOnClickListener{
+        startActivity(Intent(this, Terminal::class.java))
+      }
+      
+      findViewById<LinearLayout>(R.id.ytmp3).setOnClickListener{
+        startActivity(Intent(this, Konverter::class.java))
+      }
+      
+      findViewById<LinearLayout>(R.id.musik).setOnClickListener{
+        startActivity(Intent(this, Musik::class.java))
       }
     }
   
