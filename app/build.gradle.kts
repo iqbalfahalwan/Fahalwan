@@ -10,10 +10,10 @@ android {
     
     defaultConfig {
         applicationId = "iqbal.fahalwan"
-        minSdk = 21
+        minSdk = 22
         targetSdk = 33
         versionCode = 1
-        versionName = "1.2.3"
+        versionName = "1.3.3"
         
         vectorDrawables { 
             useSupportLibrary = true
