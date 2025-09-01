@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@color/hitam">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:background="@drawable/bg_nav"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="#000000">
+
+            <TextView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:gravity="center"
+                 android:background="@drawable/bg_merah"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/keluar"
+                 android:text="X" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/coklat">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/nav" />
+
+        </LinearLayout>
+
+        <FrameLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="70dp">
+
+                <TextView
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:textColor="#afffff"
+                     android:text="$"
+                     android:id="@+id/hasil" />
+
+            </ScrollView>
+
+            <LinearLayout
+                 android:layout_height="60dp"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="5dp"
+                 android:gravity="center"
+                 android:layout_gravity="bottom">
+
+                <EditText
+                     android:layout_height="50dp"
+                     android:layout_width="250dp"
+                     android:layout_marginEnd="10dp"
+                     android:background="@drawable/bg_lime"
+                     android:padding="5dp"
+                     android:textColor="#000000"
+                     android:id="@+id/tulis" />
+
+                <TextView
+                     android:layout_height="50dp"
+                     android:layout_width="50dp"
+                     android:gravity="center"
+                     android:background="@drawable/bg_lime"
+                     android:textColor="#000000"
+                     android:id="@+id/kirim"
+                     android:text="Kirim" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

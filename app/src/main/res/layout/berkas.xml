@@ -58,7 +58,7 @@
              android:layout_height="wrap_content"
              android:layout_width="wrap_content"
              ads:adSize="BANNER"
-             ads:adUnitId="ca-app-pub-2534537144295464/1737827651"
+             ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
              android:id="@+id/iklan_nav" />
 
         <LinearLayout
@@ -107,21 +107,21 @@
             <ImageView
                  android:layout_height="25dp"
                  android:layout_width="25dp"
-                 android:src="@drawable/ikon"
+                 android:src="@drawable/baru"
                  android:layout_marginEnd="25dp"
                  android:id="@+id/baru" />
 
             <ImageView
                  android:layout_height="25dp"
                  android:layout_width="25dp"
-                 android:src="@drawable/ikon"
+                 android:src="@drawable/urut"
                  android:layout_marginEnd="25dp"
                  android:id="@+id/urut" />
 
             <ImageView
                  android:layout_height="25dp"
                  android:layout_width="25dp"
-                 android:src="@drawable/ikon"
+                 android:src="@drawable/cari"
                  android:layout_marginEnd="25dp"
                  android:id="@+id/cari" />
 
@@ -131,7 +131,7 @@
              android:layout_height="wrap_content"
              android:layout_width="wrap_content"
              ads:adSize="BANNER"
-             ads:adUnitId="ca-app-pub-2534537144295464/1737827651"
+             ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
              android:layout_centerHorizontal="true"
              android:layout_gravity="center_horizontal"
              android:id="@+id/iklan_utama" />
@@ -189,12 +189,13 @@
                  android:layout_height="25dp"
                  android:layout_width="25dp"
                  android:src="@drawable/hapus"
+                 android:layout_marginEnd="25dp"
                  android:id="@+id/hapus" />
 
             <ImageView
                  android:layout_height="25dp"
                  android:layout_width="25dp"
-                 android:src="@drawable/ikon"
+                 android:src="@drawable/kompres"
                  android:id="@+id/zip" />
 
         </LinearLayout>

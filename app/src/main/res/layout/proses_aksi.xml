@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:background="@drawable/bg_nav"
+     android:gravity="center"
+     android:padding="8dp"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="4dp"
+         android:background="@drawable/bg_lime"
+         android:padding="5dp"
+         android:textColor="@color/coklat"
+         android:id="@+id/status_aksi"
+         android:text="nama.file" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="4dp"
+         android:background="@drawable/bg_lime"
+         android:padding="5dp"
+         android:textColor="@color/coklat"
+         android:id="@+id/nama_proses"
+         android:text="nama.file" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="4dp"
+         android:background="@drawable/bg_putih"
+         android:padding="5dp"
+         android:textColor="#000000"
+         android:id="@+id/persen"
+         android:text="0%" />
+
+    <ProgressBar
+         android:layout_height="10dp"
+         android:layout_width="match_parent"
+         android:max="100"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:progress="0"
+         android:progressDrawable="@drawable/bg_cincin"
+         android:id="@+id/load" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="end"
+         android:layout_marginTop="10dp">
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:id="@+id/batal"
+             android:text="Batalkan" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginEnd="10dp"
+             android:id="@+id/sembunyi"
+             android:text="Sembunyikan" />
+
+    </LinearLayout>
+
+</LinearLayout>
