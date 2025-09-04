@@ -20,6 +20,7 @@ import java.util.concurrent.TimeUnit
 import android.telephony.*
 import com.google.android.gms.ads.*
 import com.google.android.gms.*
+import androidx.core.app.ActivityCompat
 import com.google.android.gms.ads.rewarded.*
 
 public class MainActivity : AppCompatActivity() {
@@ -28,6 +29,7 @@ public class MainActivity : AppCompatActivity() {
     private lateinit var status:ImageView
     private var rewardedAd: RewardedAd? = null
     private var isLoading = false
+    private val NOTIF_REQ_CODE = 1001
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,6 +43,7 @@ public class MainActivity : AppCompatActivity() {
         Fitur()
         Iklan()
         MobileAds.initialize(this) {}
+        cekIzinNotifikasi()
     }
     
     private fun Iklan(){
@@ -57,7 +60,7 @@ public class MainActivity : AppCompatActivity() {
         val adRequest = AdRequest.Builder().build()
         RewardedAd.load(
             this,
-            "ca-aplikasi-pub-2534537144295464/7079484365",
+            "ca-app-pub-2534537144295464/7494417332",
             adRequest,
             object : RewardedAdLoadCallback() {
                 override fun onAdFailedToLoad(adError: LoadAdError) {
@@ -88,6 +91,38 @@ public class MainActivity : AppCompatActivity() {
         .setPositiveButton("Ya"){_,_-> finish()}
         .setNegativeButton("Tidak", null)
         .show()
+    }
+
+    private fun cekIzinNotifikasi() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            val izin = ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.POST_NOTIFICATIONS
+            )
+            if (izin != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(
+                    this,
+                    arrayOf(Manifest.permission.POST_NOTIFICATIONS),
+                    NOTIF_REQ_CODE
+                )
+            }
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if (requestCode == NOTIF_REQ_CODE) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "Izin notifikasi disetujui", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Izin notifikasi ditolak", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
     
     private fun IkonStatus(){
@@ -458,6 +493,10 @@ public class MainActivity : AppCompatActivity() {
       
       findViewById<LinearLayout>(R.id.musik).setOnClickListener{
         startActivity(Intent(this, Musik::class.java))
+      }
+      
+      findViewById<LinearLayout>(R.id.pembuat).setOnClickListener{
+        startActivity(Intent(this, PembuatCv::class.java))
       }
     }
   
