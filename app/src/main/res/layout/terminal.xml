@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
      xmlns:android="http://schemas.android.com/apk/res/android"
-     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
      android:layout_height="match_parent"
      android:layout_width="match_parent"
      android:background="@color/hitam">
@@ -32,6 +32,20 @@
 
         </LinearLayout>
 
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent">
+
+            <com.google.android.gms.ads.AdView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 ads:adSize="BANNER"
+                 ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/iklan_nav" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -53,7 +67,23 @@
                  android:layout_marginStart="10dp"
                  android:id="@+id/nav" />
 
+            <Switch
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:background="@drawable/bg_lime"
+                 android:textColor="@color/coklat"
+                 android:id="@+id/mode"
+                 android:text="Gunakan sistem" />
+
         </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_utama" />
 
         <FrameLayout
              android:layout_height="match_parent"
@@ -63,12 +93,14 @@
             <ScrollView
                  android:layout_height="match_parent"
                  android:layout_width="match_parent"
-                 android:layout_marginBottom="70dp">
+                 android:layout_marginBottom="70dp"
+                 android:id="@+id/scroll">
 
                 <TextView
                      android:layout_height="match_parent"
                      android:layout_width="match_parent"
                      android:textColor="#afffff"
+                     android:textIsSelectable="true"
                      android:text="$"
                      android:id="@+id/hasil" />
 

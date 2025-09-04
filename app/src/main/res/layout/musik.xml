@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@drawable/bg_utama">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:background="@drawable/bg_nav"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/abu">
+
+            <TextView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:gravity="center"
+                 android:background="@drawable/bg_merah"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/keluar"
+                 android:text="x" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             android:layout_margin="5dp"
+             ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_nav" />
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <GridLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:orientation="vertical"
+                     android:id="@+id/grid"
+                     android:layout_gravity="center_horizontal">
+
+                </GridLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/coklat">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginEnd="50dp"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/nav" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             android:layout_margin="5dp"
+             ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_utama" />
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp"
+             android:orientation="vertical">
+
+            <ImageView
+                 android:layout_height="100dp"
+                 android:layout_width="100dp"
+                 android:layout_marginBottom="50dp"
+                 android:layout_marginTop="50dp"
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/gambar_utama" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:background="@drawable/bg_lime"
+                 android:padding="5dp"
+                 android:textColor="@color/hitam"
+                 android:text="NAMA.mp3"
+                 android:id="@+id/nama_file"
+                 android:layout_gravity="center_horizontal" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="5dp"
+                 android:background="@color/langit"
+                 android:textColor="@color/coklat"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginStart="20dp"
+                 android:text="0:0"
+                 android:id="@+id/waktu" />
+
+            <SeekBar
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="50dp"
+                 android:layout_marginEnd="20dp"
+                 android:layout_marginStart="20dp"
+                 android:id="@+id/sek_proses" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:layout_marginTop="20dp">
+
+                <ImageView
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/sebelum"
+                     android:layout_margin="5dp"
+                     android:id="@+id/sebelum" />
+
+                <ImageView
+                     android:layout_height="60dp"
+                     android:layout_width="60dp"
+                     android:src="@drawable/play"
+                     android:layout_margin="50dp"
+                     android:id="@+id/mulai_stop" />
+
+                <ImageView
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/sesudah"
+                     android:layout_margin="5dp"
+                     android:id="@+id/sesudah" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

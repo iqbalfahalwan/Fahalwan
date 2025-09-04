@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@drawable/bg_utama">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:background="@drawable/bg_nav"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:background="@color/abu"
+             android:gravity="center_vertical">
+
+            <TextView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:background="@drawable/bg_merah"
+                 android:gravity="center"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/keluar"
+                 android:text="X" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/coklat">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginEnd="50dp"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/nav" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:layout_margin="10dp"
+             android:orientation="vertical">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:background="@drawable/bg_cincin"
+                 android:padding="10dp"
+                 android:orientation="vertical"
+                 android:id="@+id/liner_link">
+
+                <EditText
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:layout_marginBottom="50dp"
+                     android:hint="Masukan Url"
+                     android:textColor="@color/langit"
+                     android:layout_marginTop="10dp"
+                     android:id="@+id/tulis_link" />
+
+                <TextView
+                     android:layout_height="50dp"
+                     android:layout_width="70dp"
+                     android:gravity="center"
+                     android:background="@drawable/bg_lime"
+                     android:padding="5dp"
+                     android:textColor="#000000"
+                     android:id="@+id/cari_link"
+                     android:layout_gravity="end"
+                     android:text="CARI" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:visibility="gone"
+                 android:gravity="center"
+                 android:background="@drawable/bg_cincin"
+                 android:padding="10dp"
+                 android:orientation="vertical"
+                 android:id="@+id/liner_hasil">
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:visibility="visible"
+                     android:padding="8dp"
+                     android:textSize="16sp"
+                     android:textColor="#ffffff"
+                     android:id="@+id/judul_hasil"
+                     android:text="Judul Video" />
+
+                <ImageView
+                     android:layout_height="100dp"
+                     android:layout_width="200dp"
+                     android:layout_margin="50dp"
+                     android:id="@+id/gambar_hasil" />
+
+                <Spinner
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_marginBottom="10dp"
+                     android:id="@+id/spin_hasil">
+
+                </Spinner>
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:background="@drawable/bg_lime"
+                     android:padding="10dp"
+                     android:textColor="#000000"
+                     android:text="Download"
+                     android:id="@+id/download_hasil" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

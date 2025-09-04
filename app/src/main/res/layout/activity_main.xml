@@ -505,6 +505,31 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:gravity="center"
+                         android:layout_margin="15dp"
+                         android:orientation="vertical"
+                         android:id="@+id/pembuat">
+
+                        <ImageView
+                             android:layout_height="30dp"
+                             android:layout_width="30dp"
+                             android:src="@drawable/ic_cv"
+                             android:layout_margin="5dp" />
+
+                        <TextView
+                             android:layout_height="wrap_content"
+                             android:layout_width="75dp"
+                             android:gravity="center"
+                             android:background="@drawable/bg_putih"
+                             android:padding="2dp"
+                             android:textColor="#000000"
+                             android:text="Pembuat Cv" />
+
+                    </LinearLayout>
+
                 </GridLayout>
 
             </ScrollView>

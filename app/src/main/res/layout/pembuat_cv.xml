@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:ads="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="@drawable/bg_utama">
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="300dp"
+         android:visibility="gone"
+         android:background="@drawable/bg_nav"
+         android:orientation="vertical"
+         android:id="@+id/liner">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:background="@color/abu"
+             android:gravity="center_vertical">
+
+            <TextView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:layout_marginEnd="50dp"
+                 android:gravity="center"
+                 android:background="@drawable/bg_merah"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/keluar"
+                 android:text="X" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             android:layout_margin="5dp"
+             ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_nav" />
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:layout_margin="10dp"
+                     android:orientation="vertical"
+                     android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                         android:layout_height="75dp"
+                         android:layout_width="75dp"
+                         android:src="@drawable/tambah"
+                         android:layout_margin="20dp"
+                         android:layout_gravity="center_horizontal"
+                         android:id="@+id/foto" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Nama"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/nama" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Whatsapp"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/wa" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan nomor.telp"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/telp" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Email"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/email" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Instagram"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/ig" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Tempat,tgl lahir"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/ttl" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Usia Anda"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/usia" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Agama Anda"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/agama" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Tempat Tinggal/Domisili"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/domisili" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Hobi Anda"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/hobi" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Jurusan/Pend Terakir"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/jurusan" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Sekolah Dasar"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/sd" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Sekolah Menengah Pertama"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/smp" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Sekolah Menengah Akir"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/sma" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Universitas"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/uni" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Pengalaman"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/pengalaman" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Skill Anda"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/skill" />
+
+                    <EditText
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:background="@drawable/bg_utama"
+                         android:hint="Masukan Tentang karakter anda"
+                         android:padding="5dp"
+                         android:layout_margin="10dp"
+                         android:textColor="@color/langit"
+                         android:id="@+id/karakter" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="40dp"
+             android:layout_width="match_parent"
+             android:gravity="center_vertical"
+             android:background="@color/coklat">
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/nav"
+                 android:layout_marginEnd="50dp"
+                 android:layout_marginStart="10dp"
+                 android:id="@+id/nav" />
+
+            <ImageView
+                 android:layout_height="25dp"
+                 android:layout_width="25dp"
+                 android:src="@drawable/salin"
+                 android:id="@+id/simpan" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             ads:adSize="BANNER"
+             android:layout_margin="10dp"
+             ads:adUnitId="ca-app-pub-2534537144295464/1894875798"
+             android:layout_centerHorizontal="true"
+             android:layout_gravity="center_horizontal"
+             android:id="@+id/iklan_utama" />
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_margin="10dp">
+
+            <ScrollView
+                 android:layout_height="match_parent"
+                 android:layout_width="match_parent">
+
+                <HorizontalScrollView
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent">
+
+                    <LinearLayout
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:background="@color/putih"
+                         android:padding="20dp"
+                         android:orientation="vertical"
+                         android:id="@+id/utama">
+
+                        <LinearLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:gravity="center_vertical">
+
+                            <ImageView
+                                 android:layout_height="200dp"
+                                 android:layout_width="150dp"
+                                 android:src="@drawable/txe"
+                                 android:layout_margin="10dp"
+                                 android:id="@+id/foto_out" />
+
+                            <LinearLayout
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:layout_margin="15dp"
+                                 android:orientation="vertical">
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="10dp"
+                                     android:background="@drawable/bg_c_m"
+                                     android:padding="5dp"
+                                     android:textSize="17dp"
+                                     android:textColor="@color/hitam"
+                                     android:textStyle="bold"
+                                     android:text="Nama anda disini"
+                                     android:id="@+id/nama_out" />
+
+                                <LinearLayout
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:gravity="center"
+                                     android:layout_margin="5dp">
+
+                                    <ImageView
+                                         android:layout_height="20dp"
+                                         android:layout_width="20dp"
+                                         android:src="@drawable/wa"
+                                         android:layout_margin="3dp" />
+
+                                    <TextView
+                                         android:layout_height="wrap_content"
+                                         android:layout_width="wrap_content"
+                                         android:textColor="@color/hitam"
+                                         android:text="wa"
+                                         android:id="@+id/wa_out" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:gravity="center"
+                                     android:layout_margin="5dp">
+
+                                    <ImageView
+                                         android:layout_height="20dp"
+                                         android:layout_width="20dp"
+                                         android:src="@drawable/telp"
+                                         android:layout_margin="3dp" />
+
+                                    <TextView
+                                         android:layout_height="wrap_content"
+                                         android:layout_width="wrap_content"
+                                         android:textColor="@color/hitam"
+                                         android:text="telp"
+                                         android:id="@+id/telp_out" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:gravity="center"
+                                     android:layout_margin="5dp">
+
+                                    <ImageView
+                                         android:layout_height="20dp"
+                                         android:layout_width="20dp"
+                                         android:src="@drawable/email"
+                                         android:layout_margin="3dp" />
+
+                                    <TextView
+                                         android:layout_height="wrap_content"
+                                         android:layout_width="wrap_content"
+                                         android:textColor="@color/hitam"
+                                         android:text="Email"
+                                         android:id="@+id/email_out" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:gravity="center"
+                                     android:layout_margin="5dp">
+
+                                    <ImageView
+                                         android:layout_height="20dp"
+                                         android:layout_width="20dp"
+                                         android:src="@drawable/ig"
+                                         android:layout_margin="3dp" />
+
+                                    <TextView
+                                         android:layout_height="wrap_content"
+                                         android:layout_width="wrap_content"
+                                         android:textColor="@color/hitam"
+                                         android:text="ig"
+                                         android:id="@+id/ig_out" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:layout_margin="10dp"
+                             android:orientation="vertical">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:background="@drawable/bg_c_m"
+                                 android:padding="5dp"
+                                 android:layout_margin="10dp"
+                                 android:textSize="14dp"
+                                 android:textColor="@color/hitam"
+                                 android:textStyle="italic | bold"
+                                 android:text="Informasi Pribadi" />
+
+                            <GridLayout
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:layout_marginStart="5dp"
+                                 android:columnCount="2">
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Tempat Tanggal lahir" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/ttl_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Usia/Umur" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/usia_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Agama" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/agama_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Tempat Tinggal/Domisili" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/domisili_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Hobi" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/hobi_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Jurusan/Pendidikan Akir" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/jurusan_out" />
+
+                            </GridLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:layout_margin="10dp"
+                             android:orientation="vertical">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:background="@drawable/bg_c_m"
+                                 android:padding="5dp"
+                                 android:layout_margin="10dp"
+                                 android:textSize="14dp"
+                                 android:textColor="@color/hitam"
+                                 android:textStyle="italic | bold"
+                                 android:text="Informasi Pendidikan" />
+
+                            <GridLayout
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:layout_marginStart="5dp"
+                                 android:columnCount="2">
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Sekolah Dasar" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/sd_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Sekolah Menengah Pertama" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/smp_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Sekolah Menengah Akir" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/sma_out" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:layout_marginEnd="10dp"
+                                     android:textColor="#000000"
+                                     android:text="Universitas" />
+
+                                <TextView
+                                     android:layout_height="wrap_content"
+                                     android:layout_width="wrap_content"
+                                     android:layout_marginBottom="5dp"
+                                     android:textColor="#000000"
+                                     android:id="@+id/uni_out" />
+
+                            </GridLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:layout_margin="10dp"
+                             android:orientation="vertical">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:background="@drawable/bg_c_m"
+                                 android:padding="5dp"
+                                 android:layout_margin="10dp"
+                                 android:textSize="14dp"
+                                 android:textColor="@color/hitam"
+                                 android:textStyle="italic | bold"
+                                 android:text="Informasi Pengalaman" />
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:layout_marginBottom="5dp"
+                                 android:textColor="#000000"
+                                 android:text="Anda Harus menulis secara manual disini"
+                                 android:id="@+id/pengalaman_out" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:layout_margin="10dp"
+                             android:orientation="vertical">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:background="@drawable/bg_c_m"
+                                 android:padding="5dp"
+                                 android:layout_margin="10dp"
+                                 android:textSize="14dp"
+                                 android:textColor="@color/hitam"
+                                 android:textStyle="italic | bold"
+                                 android:text="Informasi Skill" />
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:layout_marginBottom="5dp"
+                                 android:textColor="#000000"
+                                 android:text="Anda Harus menulis secara manual disini"
+                                 android:id="@+id/skill_out" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                             android:layout_height="wrap_content"
+                             android:layout_width="match_parent"
+                             android:layout_margin="10dp"
+                             android:orientation="vertical">
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:background="@drawable/bg_c_m"
+                                 android:padding="5dp"
+                                 android:layout_margin="10dp"
+                                 android:textSize="14dp"
+                                 android:textColor="@color/hitam"
+                                 android:textStyle="italic | bold"
+                                 android:text="Informasi Karakteristik" />
+
+                            <TextView
+                                 android:layout_height="wrap_content"
+                                 android:layout_width="wrap_content"
+                                 android:layout_marginBottom="5dp"
+                                 android:textColor="#000000"
+                                 android:text="Anda Harus menulis secara manual disini"
+                                 android:id="@+id/karakter_out" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
