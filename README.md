@@ -13,3 +13,4 @@ dan mungkin akan terus berkembang seiring waktu
 [<img src="ss/ss5.jpg" width="70"/>](ss/ss5.jpg)
 
 ## Mengunduh Aplikasi
+[LINK DOWNLOAD](https://github.com/iqbalfahalwan/Fahalwan/app/build/outputs/apk/debug/app-debug.apk)
