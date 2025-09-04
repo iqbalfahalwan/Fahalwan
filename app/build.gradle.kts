@@ -2,6 +2,7 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -13,7 +14,7 @@ android {
         minSdk = 22
         targetSdk = 33
         versionCode = 1
-        versionName = "1.3.3"
+        versionName = "1.4.5"
         
         vectorDrawables { 
             useSupportLibrary = true
@@ -37,11 +38,19 @@ android {
         
     }
     
+    sourceSets {
+        getByName("main") {
+            jniLibs.srcDirs("src/main/jniLibs")
+        }
+    }
+    
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
     kotlinOptions.jvmTarget = "11"
 }
+
+
 
 dependencies {
 
@@ -50,4 +59,6 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.gms:play-services-ads:22.4.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    kapt("com.github.bumptech.glide:compiler:4.16.0")
 }
